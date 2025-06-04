@@ -68,9 +68,9 @@ if data_file:
         forecast_df["ds"] = pd.to_datetime(forecast_df["Year"], format="%Y")
 
         # Metrics (on known years only)
-        known_preds = forecast_df[forecast_df["Year"] <= yearly["Year"].max()]
-        mae = mean_absolute_error(yearly["y"], known_preds["yhat"])
-        rmse = np.sqrt(mean_squared_error(yearly["y"], known_preds["yhat"]))
+        # known_preds = forecast_df[forecast_df["Year"] <= yearly["Year"].max()]
+        # mae = mean_absolute_error(yearly["y"], known_preds["yhat"])
+        # rmse = np.sqrt(mean_squared_error(yearly["y"], known_preds["yhat"]))
         #r2 = r2_score(yearly["y"], known_preds["yhat"])
 
     # --- Plotting ---
@@ -87,9 +87,9 @@ if data_file:
     st.plotly_chart(fig, use_container_width=True)
 
     # --- Metrics ---
-    st.subheader("📊 Model Fit on Historical Data")
-    st.markdown(f"**MAE:** {mae:.2f}")
-    st.markdown(f"**RMSE:** {rmse:.2f}")
+    #st.subheader("📊 Model Fit on Historical Data")
+    #st.markdown(f"**MAE:** {mae:.2f}")
+    #st.markdown(f"**RMSE:** {rmse:.2f}")
     #st.markdown(f"**R² Score:** {r2:.2f}")
 
     # --- Download Option ---
