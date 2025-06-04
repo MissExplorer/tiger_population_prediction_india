@@ -71,7 +71,7 @@ if data_file:
         known_preds = forecast_df[forecast_df["Year"] <= yearly["Year"].max()]
         mae = mean_absolute_error(yearly["y"], known_preds["yhat"])
         rmse = np.sqrt(mean_squared_error(yearly["y"], known_preds["yhat"]))
-        r2 = r2_score(yearly["y"], known_preds["yhat"])
+        #r2 = r2_score(yearly["y"], known_preds["yhat"])
 
     # --- Plotting ---
     st.subheader("📈 Forecast vs Actual")
@@ -90,7 +90,7 @@ if data_file:
     st.subheader("📊 Model Fit on Historical Data")
     st.markdown(f"**MAE:** {mae:.2f}")
     st.markdown(f"**RMSE:** {rmse:.2f}")
-    st.markdown(f"**R² Score:** {r2:.2f}")
+    #st.markdown(f"**R² Score:** {r2:.2f}")
 
     # --- Download Option ---
     st.subheader("📥 Download Forecast")
