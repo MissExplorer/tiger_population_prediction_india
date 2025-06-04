@@ -1,10 +1,17 @@
-
-streamlit
 pandas
+streamlit
+matplotlib
+scikit-learn
+prophet
+plotly
+
+
+
+
 numpy
 plotly
-prophet
-scikit-learn
+
+
 statsmodels
 pmdarima
 
