@@ -1,7 +1,10 @@
-pandas
+
 streamlit
-matplotlib
-scikit-learn
-prophet
+pandas
+numpy
 plotly
+prophet
+scikit-learn
+statsmodels
+pmdarima
 
