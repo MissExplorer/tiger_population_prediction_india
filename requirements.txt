@@ -8,10 +8,3 @@ plotly
 
 
 
-numpy
-plotly
-
-
-statsmodels
-pmdarima
-
