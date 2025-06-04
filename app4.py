@@ -9,7 +9,7 @@ from datetime import datetime
 
 # Page config
 st.set_page_config(page_title="🐅 Tiger Population Forecast", layout="centered")
-st.title("🐅 Tiger Population Forecast (Up to 2030)")
+st.title("🐅 Tiger Population Forecast")
 st.markdown("This tool forecasts India's tiger population using **Prophet** and **Linear Regression** models.")
 
 # Upload CSV
