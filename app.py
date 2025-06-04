@@ -11,7 +11,9 @@ st.title("🐅 National Tiger Population Forecast")
 st.write("This app uses the **Prophet model** to forecast total tiger population in India using year-wise data from all reserves.")
 
 # --- File uploader ---
-uploaded_file = st.file_uploader("C:\Users\Mansi Prabha\OneDrive\Desktop\Major_Project\Cleaned_dataset.csv", type=["csv"])
+
+uploaded_file = st.file_uploader("Upload your cleaned CSV file", type=["csv"])
+
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
